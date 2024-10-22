@@ -1,38 +1,360 @@
-.App {
-  text-align: center;
+.login ,.sign{
+    background-image: url("./components/Assets/carlogin1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.logbg{
+    margin-left: 35%;
+}
+.signup{
+    color: #000000;
+}
+.login h2,.sign h2{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+.login input, .sign input{
+   padding: 5px;
+   border-radius: 15px;
+   background: none;
+   width: 300px; 
+   
+}
+.login input::placeholder{
+    color: black;
+}
+.sign input::placeholder{
+    color: black;
+}
+.login button {
+    float: right;
+    border-radius: 10px;
+    background: none;
+    width: 30%;
+}
+.login button:hover{
+    box-shadow: 2px 2px #000000;
+}
+.login p {
+    color: black;
+    margin: 25px;
+}
+.signup:hover{
+    color: white;
+}
+.sign button{
+    float: right;
+    border-radius: 10px;
+    background: none;
+}
+.sign button:hover{
+    box-shadow: 2px 2px #000000;
+}
+.navbar h1{
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-family: "New Amsterdam", sans-serif ;
+    margin-left: 20px;
+}
+.dash {
+    background-color: rgb(22,24,49);
+    color: white;
+    height: 170vh;
+}
+.dash1 {
+    background-color: rgb(22,24,49);
+    color: white;
+    height: auto;
+}
+.dash2 {
+    background-color: rgb(22,24,49);
+    color: white;
+    height: auto;
+}
+.dash h5 , .dash1 h5 , .dash2 h5{
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 0 5px;
+    margin-top: 15%;
+}
+.dash h5:hover {
+    background-color: rgb(35,42,92);
+    border-radius: 10px;
+}
+.dash1 h5:hover {
+    background-color: rgb(35,42,92);
+    border-radius: 10px;
+}
+.dash2 h5:hover {
+    background-color: rgb(35,42,92);
+    border-radius: 10px;
+}
+.container{
+    background-color: rgb(46,55,127);
+    color: white;
+    height: 400px;
+    padding: 10px;
+}
+.container h1{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+}
+.cards{
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: white;
+    height: 800px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.maincard{
+    gap: 2%;
+}
+.card1 h6{
+    background: linear-gradient(to right, #ccffd4, #a1c4fd);
+    color: #2ca650;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.card2 h6 {
+    background: linear-gradient(to right, #ffd6d6, #f9f1f1);
+    color: #e63946;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.card2 h5 {
+    background: linear-gradient(to right, #ffd6d6, #f9f1f1);
+    color: #2ca650;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.card1{
+    width: 300px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(114,125,210);
+}
+.card2{
+    color: gray;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(241,242,245);
+}
+.card2 h4{
+    color: black;
+}
+.bars{
+    margin-right: 20%;
+    padding: 5%;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.service-item {
+text-align: center;
+padding: 20px;
+border: 1px solid #f0f0f0;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.service-item img {
+max-width: 60px;
+margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.service-item p {
+font-size: 16px;
+font-weight: bold;
+margin-top: 0;
+margin-bottom: 10px;
+color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.service-item .new-label {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #28a745;
+color: #fff;
+padding: 5px 10px;
+font-size: 12px;
+border-radius: 5px;
+text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-item , .car:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sercard h6 {
+    color: black;
+}
+.carservices {
+    background-color: rgb(46,55,127);
+    color: white;
+    height: 170vh;
+}
+.carservices h1{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    padding: 10px;
+}
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    padding: 13px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 250px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+.service-info1 h3 {
+    color: #333;
+    padding: 5px;
+}
+.service-info {
+    display:inline-flex;
+    align-items: center;
+    position: relative;
+}
+.service-info ul {
+    padding: 0;
+    list-style: none;
+}
+.service-info ul li {
+    margin: 5px 0;
+    padding: 5px 0;
+    color: #666;
+}
+
+.select-car {
+    align-items: center;
+    top: 20%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    background:none ;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 10px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-items: center;
+}
+
+.select-car:hover {
+    color: white;
+    background-color: #e60000;
+}
+.time-taken {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e5e7e9;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+}    
+body{
+    overflow:auto;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cars h1 {
+    text-align: center;
+    color: #333;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+}
+
+.car-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+
+.car-model {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.car-model img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.car-model:hover{
+    transform: scale(1.1);
+}
+
+.car-model h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #555;
+}
+.take h5 {
+    font-family: "Major Mono Display", monospace;
+    font-size: 23px;
+}
+.take h5:hover {
+    background: none;
 }
